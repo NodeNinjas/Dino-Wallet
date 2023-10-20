@@ -1,11 +1,16 @@
 {
-  "name": "@theblockchaincoders",
+  "name": "nemo wallet",
   "description": "Transfer funds to any wallet",
   "version": "1.0",
   "manifest_version": 3,
   "action": {
     "default_popup": "popup.html",
-    "default_icon": "favicon.png"
+    "default_icon": "fish.png"
   },
-  "permissions": ["tabs", "bookmarks", "unlimitedStorage", "nativeMessaging"]
+  "permissions": [
+    "tabs",
+    "bookmarks",
+    "unlimitedStorage",
+    "nativeMessaging"
+  ]
 }
