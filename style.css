@@ -29,10 +29,11 @@ body {
 
 #heading {
   text-align: center;
-  margin: 2em 0;
   color: #5a38fd;
   font-size: 1.5em;
   font-weight: 500;
+  margin: 0;
+  margin-bottom: 1rem;
 }
 
 .home_des {
@@ -170,9 +171,12 @@ div p {
   display: flex;
   flex-direction: column;
   gap: 12px;
-
   padding-bottom: 0.4em;
   margin-top: 1rem;
+}
+
+.create_popUp .form {
+  margin: 0 auto;
 }
 
 .field {
