@@ -16,14 +16,6 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: [true, "Please provide a password"],
   },
-  aadhar: {
-    type: String,
-    required: [true, "Please provide your aadharNo"],
-  },
-  pancard: {
-    type: String,
-    required: [true, "Please provide your pancard"],
-  },
   passwordConfirm: {
     type: String,
     required: [true, "Please confirm your password"],
@@ -33,6 +25,14 @@ const userSchema = new mongoose.Schema({
       },
       message: "Passwords are not the same!",
     },
+  },
+  aadhar: {
+    type: String,
+    required: [true, "Please provide your aadharNo"],
+  },
+  pancard: {
+    type: String,
+    required: [true, "Please provide your pancard"],
   },
   address: String,
   private_key: String,
