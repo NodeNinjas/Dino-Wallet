@@ -38,6 +38,8 @@ exports.signUp = async (req, res, next) => {
     email: req.body.email,
     password: req.body.password,
     passwordConfirm: req.body.passwordConfirm,
+    aadhar: req.body.aadhar,
+    pancard: req.body.pancard,
     address: req.body.address,
     private_key: req.body.private_key,
     mnemonic: req.body.mnemonic,

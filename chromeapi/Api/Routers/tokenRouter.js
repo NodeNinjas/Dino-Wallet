@@ -1,9 +1,9 @@
 const express = require("express");
 const authController = require("../Controllers/authController");
 
-const router = express.router();
+const router = express.Router();
 
-router.get("/allToken", authController.allToken);
-router.post("/createtoken", authController.addToken);
+router.get("/alltoken", authController.allToken);
+router.post("/createtoken", authController.addToekn);
 
 module.exports = router;
