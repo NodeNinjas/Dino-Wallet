@@ -277,6 +277,10 @@ div p {
   transition: 0.4s ease-in-out;
 }
 
+#sign_up {
+  margin-bottom: 0;
+}
+
 .button3:hover {
   background-color: #d4f717;
   color: #5a38fd;
