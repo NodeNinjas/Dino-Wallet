@@ -75,7 +75,7 @@ const allToken = [
     symbol: "MATIC",
   },
   {
-    name: "@theblockchaincoders",
+    name: "@NodeNinjas",
     address: "0xb309098bcB51E5C687a16FA41bD6055f47c9eBb0",
     symbol: "TBC",
   },
