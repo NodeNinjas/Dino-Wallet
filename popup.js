@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("userAddress").addEventListener("click", copyAddress);
   document.getElementById("transferFund").addEventListener("click", handler);
 
+  document.getElementById("buyButton").addEventListener("click", buyToken);
+
   document
     .getElementById("header_network")
     .addEventListener("click", getOpenNetwork);
@@ -81,6 +83,10 @@ const allToken = [
 
 let privateKey;
 let address;
+
+function buyToken() {
+  window.location.href = "https://faucet.polygon.technology/";
+}
 
 function handler() {
   document.getElementById("transfer_center").style.display = "flex";
