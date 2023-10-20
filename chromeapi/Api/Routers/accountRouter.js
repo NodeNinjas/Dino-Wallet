@@ -1,10 +1,9 @@
 const express = require("express");
 const authController = require("../Controllers/authController");
 
-const router = express.router();
+const router = express.Router();
 
-router.get("/getaccounts", authController.allAccount);
+router.get("/allaccount", authController.allAccount);
 router.post("/createaccount", authController.createAccount);
 
 module.exports = router;
-
