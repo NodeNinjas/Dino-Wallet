@@ -51,6 +51,18 @@ let providerURL =
 let privateKey;
 let address;
 
+const allToken = [
+    {
+        name: "MATIC",
+        address: "0x0000000000000000000000000000000001010",
+        symbol: "MATIC",
+    },
+    {
+        name: "Abdul Maajith",
+        address: "0x00000000000000000000000000000000006566"
+    }
+]
+
 // Functions
 const handler = () => {
     document.getElementById("transfer_center").style.display = "flex";
