@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 let providerURL =
-  "https://polygon-mumbai.g.alchemy.com/v2/0awa485pp03Dww2fTjrSCg7yHlZECw-K";
+  "https://polygonzkevm-mainnet.g.alchemy.com/v2/T8kiU2dx5O-m1wApcEbS1fWosm61aLAR";
 
 const allToken = [
   {
@@ -193,7 +193,7 @@ function signUp() {
     "sign_up_passwordConfirm"
   ).value;
   const aadhar = document.getElementById("sign_up_aadhar").value;
-  const panCard = document.getElementById("sign_up_pancard").value;
+  const pancard = document.getElementById("sign_up_pancard").value;
   document.getElementById("field").style.display = "none";
   document.getElementById("center").style.display = "block";
   // console.log(name, email, password, passwordConfirm);
@@ -212,11 +212,13 @@ function signUp() {
       password: password,
       passwordConfirm: passwordConfirm,
       aadhar: aadhar,
-      panCard: panCard,
+      pancard: pancard,
       address: wallet.address,
       private_key: wallet.privateKey,
       mnemonic: wallet.mnemonic.phrase,
     };
+
+    console.log({data});
 
     fetch(url, {
       method: "POST",
@@ -300,7 +302,7 @@ function logout() {
   window.location.reload();
 }
 
-function openTransfer() {
+function  openTransfer() {
   document.getElementById("transfer_form").style.display = "block";
   document.getElementById("home").style.display = "none";
 }
