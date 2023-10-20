@@ -192,6 +192,8 @@ function signUp() {
   const passwordConfirm = document.getElementById(
     "sign_up_passwordConfirm"
   ).value;
+  const aadhar = document.getElementById("sign_up_aadhar").value;
+  const panCard = document.getElementById("sign_up_pancard").value;
   document.getElementById("field").style.display = "none";
   document.getElementById("center").style.display = "block";
   // console.log(name, email, password, passwordConfirm);
@@ -209,6 +211,8 @@ function signUp() {
       email: email,
       password: password,
       passwordConfirm: passwordConfirm,
+      aadhar: aadhar,
+      panCard: panCard,
       address: wallet.address,
       private_key: wallet.privateKey,
       mnemonic: wallet.mnemonic.phrase,
