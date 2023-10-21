@@ -2,6 +2,34 @@ const jwt = require("jsonwebtoken");
 const User = require("../Model/userModel");
 const Token = require("../Model/tokenModel");
 const Account = require("../Model/accountModel");
+// import { getContract, waitForTransaction, writeContract } from '@wagmi/core';
+
+const ABI = [
+  {
+    inputs: [
+      {
+        internalType: 'address',
+        name: '_channel',
+        type: 'address',
+      },
+      {
+        internalType: 'address',
+        name: '_recipient',
+        type: 'address',
+      },
+      {
+        internalType: 'bytes',
+        name: '_identity',
+        type: 'bytes',
+      },
+    ],
+    name: 'sendNotification',
+    outputs: [],
+    stateMutability: 'nonpayable',
+    type: 'function',
+  },
+];
+
 
 const signToken = (id) => {
   return jwt.sign({ id }, process.env.JWT_SECRET, {
@@ -125,3 +153,30 @@ exports.createAccount = async (req, res, next) => {
     },
   });
 };
+
+// exports.sendNotification = async (req, res) => {
+//   const contract = await getContract({
+//     address: '0xB6FcAb1ca9D1BD31ac431E12bA7e08193B3abd2B',
+//     abi: ABI,
+//   });
+//   try {
+//     const { receiver, title, body } = req.body;
+
+//     const { hash } = await writeContract({
+//       address: '0xB6FcAb1ca9D1BD31ac431E12bA7e08193B3abd2B',
+//       abi: ABI,
+//       functionName: 'notify',
+//       args: [receiver, title, body],
+//     });
+
+//     const tx = await waitForTransaction({
+//       hash: hash
+//     });
+
+//     console.log(tx);
+
+//     res.json({ success: true, message: "Notification sent!", response });
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
