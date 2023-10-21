@@ -9,7 +9,7 @@
   <a href=" https://github.com/NodeNinjas/Dino-Wallet">
   <img src="https://img.shields.io/badge/license-MPL 2.0-blue.svg">
   </a>
-  <a href="https://dinowallet.vercel.app/">
+  <a href="https://bafybeibcivlbrtymn4rrmystfrlksp2grufkzumxn5crx5xy5n6y42edke.ipfs.sphn.link/">
     <img alt="Website" src="https://img.shields.io/badge/-website-blue">
   </a>
   <a href="http://makeapullrequest.com">
@@ -21,7 +21,7 @@
 Welcome to Dino, the Web3 wallet with built-in Know Your Customer (KYC) features. Dino is designed to provide a seamless experience for creating and managing user wallets while ensuring compliance with regulatory requirements. With the power of Account Abstraction (AA) technology, Dino allows users to make monetary transactions only after their KYC has been successfully completed.
 <br>
  
-<a href="https://sentinel-ai.webxspark.com" target="_blank" rel="noopener noreferrer">Deployment Link </a>
+<a href="https://bafybeibcivlbrtymn4rrmystfrlksp2grufkzumxn5crx5xy5n6y42edke.ipfs.sphn.link/" target="_blank" rel="noopener noreferrer">Deployment Link </a>
  
 <br>
  
