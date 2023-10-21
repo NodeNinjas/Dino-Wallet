@@ -27,6 +27,40 @@ body {
   border-radius: 50%;
 }
 
+.online {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 1rem;
+  border: #5938fd 1px solid;
+  border-radius: 1rem;
+  color: #5a38fd;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.online .dot {
+  height: 10px;
+  width: 10px;
+  background-color: #5a38fd;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.address p {
+  margin: 0;
+  padding: 0.5rem 1rem;
+  border: #5938fd 1px solid;
+  border-radius: 1rem;
+  color: #5a38fd;
+  font-size: 0.8rem;
+}
+
+.online p {
+  line-height: 0.5;
+  margin: 0;
+}
+
 #heading {
   text-align: center;
   color: #5a38fd;
@@ -190,6 +224,29 @@ div p {
   outline: none;
   color: white;
   background-color: #fefefe;
+}
+
+.form {
+  position: relative;
+}
+
+#goBack,
+#close_import_account {
+  position: absolute;
+  top: -50px;
+  left: -20px;
+  margin: 1rem;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  padding: 0.5rem;
+  border: 1px solid #5938fd;
+}
+
+#goBack:hover,
+#close_import_account:hover {
+  background-color: #5938fd10;
 }
 
 .field:hover {
@@ -427,7 +484,6 @@ textarea {
 
 .home {
   margin: 0 auto;
-  background-color: #171717;
   text-align: center;
   padding: 1rem 2rem;
   display: none;
@@ -436,13 +492,19 @@ textarea {
 .home_header {
   display: flex;
   justify-content: space-between;
-  cursor: pointer;
+}
+
+#accountBlance {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .home_header_img {
   margin-top: 1rem;
-  width: 50px;
-  height: 50px;
+  width: 108px;
+  height: 108px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .home_features {
@@ -453,26 +515,79 @@ textarea {
 
 .home_features_img {
   margin-top: 1rem;
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  padding: 0.5rem;
+  border: 1px solid #5a38fd;
+
+  cursor: pointer;
+}
+
+.home_features_img:hover {
+  background-color: #5938fd10;
 }
 
 .home_feature_item > p {
+  font-size: 0.8rem;
   line-height: 0;
   color: #5a38fd;
 }
 
 .home_tabs {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: space-between;
   margin-top: 1rem;
+  align-items: center;
+}
+
+#open_assets,
+#open_activity {
+  padding: 0.5rem 1rem;
+  border: #5938fd 1px solid;
+  border-radius: 1rem;
+  color: #5a38fd;
+  font-size: 0.8rem;
+  font-weight: 500;
+  width: fit-content;
+  cursor: pointer;
+}
+
+#open_assets:hover,
+#open_activity:hover {
+  background-color: #5938fd10;
+}
+
+#logout {
+  padding: 0.5rem 1rem;
+  border: #5938fd 1px solid;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  width: fit-content;
+  border-radius: 5px;
+  padding: 0.6rem 1.5rem;
+  margin: 1rem 0rem;
+  background-color: #5a38fd;
+  border: none;
+  outline: none;
+  color: #fefefe !important;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+#logout:hover {
+  background-color: #d4f717;
+  color: #5a38fd !important;
 }
 
 /* //ASSETS */
 
 .assets_item {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   grid-area: 2rem;
   border-top: 1px solid #5a38fd;
@@ -485,6 +600,23 @@ textarea {
   border: 1px solid #5a38fd;
   border-radius: 0.5rem;
   padding: 0.5rem;
+}
+
+.assets_item * {
+  font-size: 0.8rem;
+  color: #5a38fd;
+  border: 1px solid #5a38fd;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+#transfer_form,
+#import_account {
+  padding: 2rem 3rem;
+}
+
+#transferFund {
+  margin-top: 0;
 }
 
 .activity {
