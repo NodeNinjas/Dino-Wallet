@@ -1,7 +1,7 @@
 ## Dino-Wallet
 <p align="center">
   <a href="https://sentinel-ai.webxspark.com">
-    <img alt = "Sentinel.AI Logo" src = "./vector-logo.png">
+    <img width="200px" alt = "Dino-Wallet Logo" src = "./dragon (2).png" >
   </a>
 </p>
 <h1 align="center" >Dino: Your KYC-Compliant Web3 Wallet for Effortless Monetary Transactions </h1>
