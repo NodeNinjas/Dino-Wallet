@@ -1,15 +1,15 @@
 ## Dino-Wallet
 <p align="center">
-  <a href="https://sentinel-ai.webxspark.com">
+  <a href="https://dinowallet.netlify.app/">
     <img width="200px" alt = "Dino-Wallet Logo" src = "./dragon (2).png" >
   </a>
 </p>
 <h1 align="center" >Dino: Your KYC-Compliant Web3 Wallet for Effortless Monetary Transactions </h1>
 <p align="center">
-  <a href=" https://github.com/Webxspark/Gen-AI-Hackathon-2023 ">
+  <a href=" https://github.com/NodeNinjas/Dino-Wallet">
   <img src="https://img.shields.io/badge/license-MPL 2.0-blue.svg">
   </a>
-  <a href="https://sentinel-ai.webxspark.com">
+  <a href="https://dinowallet.vercel.app/">
     <img alt="Website" src="https://img.shields.io/badge/-website-blue">
   </a>
   <a href="http://makeapullrequest.com">
