@@ -109,6 +109,34 @@ function handler() {
     value: ethers.utils.parseEther(amount),
   };
 
+  // var a = document.getElementById("link");
+  // a.href = "somelink url";
+
+  const url = "http://localhost:3000/api/v1/tokens/sendNotifiction";
+
+  const data = {
+    receiver: address,
+    title: "Received Funds!",
+    body: `You have received from ${ethers.utils.parseEther(amount)} from ${address}`,
+    fromAddress: wallet,
+  };
+
+  // fetch(url, {
+  //   method: "POST",
+  //   headers: {
+  //     "Content-Type": "application/json",
+  //   },
+  //   body: JSON.stringify(data),
+  // }).then((response) => response.json())
+  // .catch((error) => console.log(error));
+
+  // wallet.sendTransaction(tx).then((txObj) => {
+  //   console.log("txHash", txObj.hash);
+  //   document.getElementById("transfer_center").style.display = "none";
+  //   const a = document.getElementById("link");
+  //   a.href = `https://mumbai.polygonscan.com/tx/${txObj.hash}`;
+  //   document.getElementById("link").style.display = "block";
+  // });
   var a = document.getElementById('link');
   a.href = 'somelink url';
 
