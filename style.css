@@ -231,7 +231,8 @@ div p {
 }
 
 #goBack,
-#close_import_account {
+#close_import_account,
+#goBack_import {
   position: absolute;
   top: -50px;
   left: -20px;
@@ -611,7 +612,8 @@ textarea {
 }
 
 #transfer_form,
-#import_account {
+#import_account,
+#import_token {
   padding: 2rem 3rem;
 }
 
