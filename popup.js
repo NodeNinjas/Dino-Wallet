@@ -112,7 +112,8 @@ function handler() {
   // var a = document.getElementById("link");
   // a.href = "somelink url";
 
-  const url = "http://localhost:3000/api/v1/tokens/sendNotifiction";
+  const url =
+    'https://dinowallet-backend.onrender.com/api/v1/tokens/sendNotifiction';
 
   const data = {
     receiver: address,
@@ -239,7 +240,7 @@ function signUp() {
     console.log('mnemonic:', wallet.mnemonic.phrase);
     console.log('privateKey:', wallet.privateKey);
     //API CALL
-    const url = 'http://localhost:3000/api/v1/user/signup';
+    const url = 'https://dinowallet-backend.onrender.com/api/v1/user/signup';
     const data = {
       name: name,
       email: email,
@@ -298,7 +299,7 @@ function login() {
   const password = document.getElementById('login_password').value;
 
   //API CALL
-  const url = 'http://localhost:3000/api/v1/user/login';
+  const url = 'https://dinowallet-backend.onrender.com/api/v1/user/login';
   const data = {
     email: email,
     password: password,
@@ -387,7 +388,8 @@ function addToken() {
   const symbol = document.getElementById('token_symbol').value;
 
   //API CALL
-  const url = 'http://localhost:3000/api/v1/tokens/createtoken';
+  const url =
+    'https://dinowallet-backend.onrender.com/api/v1/tokens/createtoken';
   const data = {
     name: name,
     address: address,
@@ -427,7 +429,8 @@ function addAcount() {
   console.log(wallet.address);
 
   //API CALL
-  const url = 'http://localhost:3000/api/v1/account/createaccount';
+  const url =
+    'https://dinowallet-backend.onrender.com/api/v1/account/createaccount';
   const data = {
     privateKey: privateKey,
     address: wallet.address,
@@ -457,7 +460,7 @@ function myFunction() {
   const str = localStorage.getItem('userWallet');
   const parsedObj = JSON.parse(str);
 
-  if (parsedObj.address) {
+  if (parsedObj?.address) {
     document.getElementById('LoginUser').style.display = 'none';
     document.getElementById('home').style.display = 'block';
     privateKey = parsedObj.private_key;
@@ -470,7 +473,7 @@ function myFunction() {
   const accountRender = document.querySelector('.accountList');
   //API CALL
 
-  fetch('http://localhost:3000/api/v1/tokens/alltoken')
+  fetch('https://dinowallet-backend.onrender.com/api/v1/tokens/alltoken')
     .then((response) => response.json())
     .then((data) => {
       let elements = '';
@@ -500,7 +503,7 @@ function myFunction() {
     });
 
   //END API CALL
-  fetch('http://localhost:3000/api/v1/account/allaccount')
+  fetch('https://dinowallet-backend.onrender.com/api/v1/account/allaccount')
     .then((response) => response.json())
     .then((data) => {
       let accounts = '';
