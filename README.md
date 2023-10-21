@@ -1,4 +1,4 @@
-## DectraLance-Unfold
+## Dino-Wallet
 <p align="center">
   <a href="https://sentinel-ai.webxspark.com">
     <img alt = "Sentinel.AI Logo" src = "./vector-logo.png">
